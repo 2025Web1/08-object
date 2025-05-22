@@ -1,3 +1,7 @@
+---
+sort: 3
+---
+
 # DbPhpクラス
 
 次に、**クラス「DbData」を継承する、クラス「DbPhp」を定義するPHPファイル「dbphp.php」** を作成します。
