@@ -10,16 +10,16 @@ sort: 3
 ① `selectAll( )` メソッド<br>
 テーブルpersonのすべてのデータを抽出するメソッド
 
-② `selectPerson( $uid )` メソッド<br>
+② `public function selectPerson(int $uid)` メソッド<br>
 引数で指定されたユーザーID（$uid）のデータを抽出するメソッド
 
-③ `insertPerson( $name,  $cid,  $age )` メソッド<br>
+③ `public function insertPerson(string $name, int $cid, int $age)` メソッド<br>
 引数で渡された氏名、カンパニーID、年齢の値で新規ユーザーを登録するメソッド
 
-④ `updatePerson( $uid,  $name )` メソッド <br>
+④ `public function updatePerson(int $uid, string $name)` メソッド <br>
 引数で指定されたユーザーID($uid）の氏名を引数で渡された$nameの値に更新するメソッド
 
-⑤ `deletePerson( $name )` メソッド<br>
+⑤ `public function deletePerson(string $name)` メソッド<br>
 引数で指定された氏名（$name）のデータを削除するメソッド
 
 **classes/dbphp.php**
