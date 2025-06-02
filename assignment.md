@@ -28,7 +28,7 @@ sort: 6
     // (穴埋め)もしも送られてきたuidのデータが空なら、uidを求めるフォームを表示
     if (                    ) {
     ?>
-        <form action="dbselect1.php" method="POST">
+        <form action="obj_select1.php" method="POST">
             <input type="text" name="uid">
             <input type="submit" value="検索">
         </form>
