@@ -34,7 +34,7 @@ require_once __DIR__ . '/dbdata.php';
 class DbPhp extends DbData
 {
     // ①: テーブルpersonからすべてのデータを抽出する
-    public function selectAll()
+    public function selectAll(): array
     {
         $sql = 'SELECT * FROM person';
         // 継承したDBDataクラスのquery( )メソッドを呼び出している
@@ -46,7 +46,7 @@ class DbPhp extends DbData
     }
 
     // ②:テーブルpersonから指定されたuidのデータを抽出する
-    public function selectPerson($uid)
+    public function selectPerson(int $uid): array|false
     {
         $sql = 'SELECT * FROM person WHERE uid = ?';
         // 継承したDBDataクラスのquery( )メソッドを呼び出している
@@ -58,7 +58,7 @@ class DbPhp extends DbData
     }
 
     // ③:テーブルpersonに新規ユーザーを登録する
-    public function insertPerson($name, $cid, $age)
+    public function insertPerson(string $name, int $cid, int $age): void
     {
         $sql = 'INSERT INTO person (name, company_id, age) VALUES (?, ?, ?)';
         // 継承したDBDataクラスのexec( )メソッドを呼び出している
@@ -67,7 +67,7 @@ class DbPhp extends DbData
     }
 
     // ④:テーブルpersonのuidを指定し、氏名の値を更新する
-    public function updatePerson($uid, $name)
+    public function updatePerson(int $uid, string $name): void
     {
         $sql = 'UPDATE person SET name = ? WHERE uid = ?';
         // 継承したDBDataクラスのexec( )メソッドを呼び出している
@@ -76,7 +76,7 @@ class DbPhp extends DbData
     }
 
     // ⑤:テーブルpersonの氏名を指定し、データを削除する
-    public function deletePerson($name)
+    public function deletePerson(string $name): void
     {
         $sql = 'DELETE FROM person WHERE name = ?';
         // 継承したDBDataクラスのexec( )メソッドを呼び出している
