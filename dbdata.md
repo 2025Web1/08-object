@@ -86,7 +86,7 @@ class DbData
   }
 
   // INSERT、UPDATE、DELETE文実行用のメソッド ・・・このメソッドもユーザー定義関数
-  protected function exec($sql, $array_params) // ⑥
+  protected function exec(string $sql, array $array_params): void // ⑥
   {
     $stmt = $this->pdo->prepare($sql);
     // 成功:true、失敗:false
