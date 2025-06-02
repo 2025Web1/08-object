@@ -61,7 +61,7 @@ DbPhpオブジェクトの `selectAll( )` メソッドを呼び出し、抽出�
 以下のコードから穴あきになっています。
 先程の`obj_select.php`と同様に、クラス`DbPhp`を利用するコードを完成させてください。
 
-なお、ブラウザ上での動作は[データベース利用](../db-crud/README.md)と同じです。
+なお、ブラウザ上での動作は[データベース利用](https://2025web1.github.io/07-database/)と同じです。
 
 **obj_update.php**
 
