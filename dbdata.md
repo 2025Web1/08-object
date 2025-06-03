@@ -58,7 +58,7 @@ class DbData
   protected $pdo;
 
   // コンストラクタ
-  // 「__construct」の「̲̲__」は「_(アンダースコア)」を2つ記述する ・・・③
+  // 「__construct」の「__」は「_(アンダースコア)」を2つ記述する ・・・③
   public function __construct()
   {
     // PDOオブジェクトを生成する
