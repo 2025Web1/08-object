@@ -37,7 +37,9 @@ sort: 7
         // DbPhpクラスのオブジェクト生成し、selectPerson( )メソッドをよびだす
         require_once __DIR__ . '/classes/dbphp.php';
         $dbPhp = new DbPhp();
-        $person = $dbPhp->selectPerson($uid);
+        // 補習用穴埋め問題 selectPerson( )メソッドを呼び出す
+        // ヒント : $dbPhp->
+        $person =                           ;
 
         // 抽出した結果に応じた画面を表示する
         if (empty($person)) {
